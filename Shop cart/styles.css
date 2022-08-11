@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+html {
+    box-sizing: border-box;
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1,h2,h3{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-color: #B3EFFF;
+    padding: 5rem 2rem;
+}
+
+.card{
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:1rem;
+    gap: 1rem;
+}
+
+.card__image{
+    width: 10rem;
+    height: 10rem;
+}
+
+.card__description{
+    width: 45rem;
+    height: 20rem;
+}
+
+.form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card__title{
+    font-size: 3rem;
+    color: #1C304A;
+    margin-bottom: 2rem;
+}
+
+.card__text{
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.price{
+    align-self: flex-end;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.price span{
+    color: green;
+    font-size: 2.2rem;
+}
+
+.campo{
+    align-self: end;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input{
+    outline: none;
+    padding: 0.8rem;
+    width: 50%;
+}
+.submit{
+    background-color: #046B99;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    margin-left: 0.5rem;
+    border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -ms-border-radius: 2.5rem;
+    -o-border-radius: 2.5rem;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.submit:hover{
+    background-color: #1C304A;
+}
+
+.pago{
+    height: 100vh;
+    width: 49vw;
+    background-color: #046B99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pantalla{
+    width: 90%;
+    height: 70rem;
+    background-color: #B3EFFF;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 7fr 1.5fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.header{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.header__campo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__campo p{
+    font-weight: 700;
+    width: 20%;
+    text-align: center;
+}
+
+.header__title{
+    text-align: center;
+    color: #1C304A;
+}
+
+.pedidos{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.pedido{
+    width: 100%;
+    height: 10rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedido__img{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedido p, .pedido h3,
+.pedido a{
+    width: 20%;
+    text-align: center;
+}
+
+.saldo{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.picture{
+
+    width: 70%;
+}
+
+.fa-trash-can{
+    color: #800000;
+    cursor: pointer;
+}
+
+.pedido__title{
+    font-size: 1.6rem;
+}
+
+.saldo__text{
+    font-size: 5rem;
+    font-weight: 900;
+    color: #1C304A;
+}
+
+.saldo__number{
+    font-size: 5rem;
+    font-weight: 900;
+    color: #00CFFF;
+}
