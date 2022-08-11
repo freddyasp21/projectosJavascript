@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/descuento.css">
+    <title>Descuento</title>
+</head>
+
+<body>
+    <form action="" id="formulario" class="formulario">
+        <div class="campo">
+            <h3 class="titulo">Elija su prenda</h3>
+            
+            <label for="articulos">Articulo:</label>
+            <select name="articulos" id="articulos" class="articulos">
+                <option value="" id="opcion"></option>
+                <option value="camisa" id="opcion">Camisa</option>
+                <option value="pantalon" id="opcion">Pantalon</option>
+                <option value="botas" id="opcion">Botas</option>
+                <option value="chaqueta" id="opcion">Chaqueta</option>
+                <option value="gorra" id="opcion">Gorra</option>
+            </select>
+    
+            <label for="cantidad">Cantidad:</label>
+            <select name="cantidad" id="cantidad" class="cantidad">
+                <option value=""></option>
+                <option value=1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="descuento">Descuento:</label>
+            <input type="range" min="0" max="0" value="0" name="descuento" class="descuento">
+    
+            <button id="submit" class="boton">Calcular</button>
+        </div>
+
+        <div class="campo">
+            <p>Descuento:</p>
+            <p id="descuentoAplicado" class="descuentoAplicado">0</p>
+            <p>Total a Pagar:</p>
+            <p id="total" class="total">0</p>
+        </div>
+    </form>
+
+
+
+
+    <script src="/descuento.js"></script>
+</body>
+
+</html>

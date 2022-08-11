@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;600;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #4b64ef;
+}
+
+.formulario {
+    width: 50vw;
+    height: 70vh;
+    padding: 20px;
+    border-radius: 39px;
+    background: #4b64ef;
+    box-shadow: 28px 28px 55px #4055cb,
+        -28px -28px 55px #5673ff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+.campo:nth-child(1){
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.campo:nth-child(2){
+    height: 100%;
+    background-color: white;
+    border-radius: 39px;
+    -webkit-border-radius: 39px;
+    -moz-border-radius: 39px;
+    -ms-border-radius: 39px;
+    -o-border-radius: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.articulos, .descuento{
+    width: 80%;
+    outline: none;
+}
+
+.cantidad{
+    outline: none;
+    width: 20%;
+}
+
+.boton{
+    align-self: center;
+    width: 40%;
+    padding: 10px;
+    border: none;
+}
+
+.descuentoAplicado,
+.total{
+    font-size: 50px;
+}
+
+.descuentoAplicado::after{
+    content: '%';
+    font-size: 25px;
+}
+
+.total::after{
+    content: '$';
+    font-size: 25px;
+}

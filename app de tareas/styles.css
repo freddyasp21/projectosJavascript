@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700;900&display=swap');
+
+:root {
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --blue-light: #04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--purple), var(--blue-light));
+    height: 100vh;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    color: var(--white);
+}
+
+.container {
+    max-width: 80%;
+    width: 40rem;
+    height: 60rem;
+    margin: 0 auto;
+}
+
+.perfil h1 {
+    color: var(--white);
+    margin: .8rem 0;
+    font-weight: 600;
+}
+
+.perfil span {
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.fecha {
+    color: var(--white);
+    padding: 5rem 0 .5rem 0;
+}
+
+.agregar-tarea {
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 7rem;
+    margin: 4rem 0;
+}
+
+.agregar-tarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+    outline: none;
+}
+
+.agregar-tarea input::placeholder {
+    font-size: 1.8rem;
+    color: var(--purple);
+}
+
+.agregar-tarea i {
+    font-size: 5rem;
+    color: var(--purple);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+}
+
+.section-tarea h3 {
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.section-tarea li {
+    display: flex;
+    background: linear-gradient(to bottom, var(--blue-dark), var(--green));
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.section-tarea i {
+    font-size: 2.5rem;
+    transition: all .3s ease;
+}
+
+.section-tarea i:hover{
+    color: var(--blue-light);
+    cursor: pointer;
+}
+
+.section-tarea > ul p {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: var(--blue-light);
+}
