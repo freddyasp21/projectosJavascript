@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitor de peso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__heading">
+          <i class="fa-solid fa-weight-scale"></i>Monitor de peso
+        </h1>
+      </header>
+
+      <main class="main">
+        <h4 class="main__heading">Mayo - 2022</h4>
+
+        <div class="box">
+          <h4 class="box__heading">Freddy Santamaria</h4>
+
+          <div class="box__info">
+              <p>Inicial</p>
+              <p>Objetivo</p>
+          </div>
+
+          <div class="box__data">
+            <div class="box__data-number">
+              <p>83.8 <span>Kg</span></p>
+            </div>
+
+            <div class="box__number-arrow">
+              <i class="fa-solid fa-circle-right"></i>
+            </div>
+
+            <div class="box__data-number">
+              <p>95 <span>Kg</span></p>
+            </div>
+          </div>
+        </div>
+        <!--cierre box-->
+
+        <div class="grid">
+          <div class="box__grid">
+            <p>Máximo</p>
+          </div>
+          <div class="box__grid-number">
+            <p>95 <span>Kg</span></p>
+          </div>
+          <div class="box__grid">
+            <p>Mínimo</p>
+          </div>
+          <div class="box__grid-number">
+            <p>80 <span>Kg</span></p>
+          </div>
+          <div class="box__grid">
+            <p>%</p>
+          </div>
+          <div class="box__grid-number">
+            <p>20 <span>%</span></p>
+          </div>
+          <div class="box__grid">
+            <p>Objetivo</p>
+          </div>
+          <div class="box__grid-number">
+            <p>95 <span>Kg</span></p>
+          </div>
+          <div class="box__grid">
+            <p>Total</p>
+          </div>
+          <div class="box__grid-number">
+            <p>3 <span>Kg</span></p>
+          </div>
+        </div>
+        <!--Cierre del grid-->
+
+        <table class="table">
+          <tr class="encabezados">
+            <th>Día</th>
+            <th>Progreso</th>
+            <th>Peso</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><progress max="100" value="70" class="progress"> 70% </progress></td>
+            <td>88 <span>Kg</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><progress max="100" value="80"> 80% </progress></td>
+            <td>89 <span>Kg</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><progress max="100" value="90"> 90% </progress></td>
+            <td>90 <span>Kg</span></td>
+          </tr>
+        </table>
+        <!-- Cierre de box-->
+      </main>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/8fc3a1f56a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
