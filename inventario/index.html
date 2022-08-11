@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" class="panel"  method="get" name="panel" id="panel">
+
+    <h2>Panel de inventario</h2>
+
+    <label for="">Que deseas agregar al inventario?</label>
+    <select name="articulo" id="articulo">
+      <option value="" disabled></option>
+      <option value="camisas">Camisas</option>
+      <option value="pantalones">Pantalones</option>
+      <option value="gorras">Gorras</option>
+      <option value="chaquetas">Chaquetas</option>
+      <option value="zapatos">Zapatos</option>
+      <option value="bolsos">Bolsos</option>
+    </select>
+
+    <label for="">Seleccione el color del articulo</label>
+    <select name="color" id="color">
+      <option value=""></option>
+      <option value="azul">Azul</option>
+      <option value="rojo">Rojo</option>
+      <option value="verde">Verde</option>
+      <option value="negro">Negro</option>
+      <option value="blanco">Blanco</option>
+    </select>
+
+    <label for="">Seleccione la Cantidad del articulo</label>
+    <input type="number" min="0" id="cantidad" onkeypress="return soloNumeros(event)" name="cantidad">
+
+    <div class="campoBotones">
+      <button type="submit" id="agregar">Agregar</button>
+      <button type="" id="eliminar">Eliminar</button>
+    </div>
+    
+  </form>
+
+  <div class="inventario">
+    <h2 class="inventario__title">Inventario</h2>
+
+    <div class="container">
+
+      <div class="card" id="camisas">
+        <img src="/img/tshirt.png" alt="" class="img">
+        <h3 class="card__tile">Camisa</h3>
+        <p class="colores">Colores disponibles:</p>
+        <div class="box">
+          <div class="campo">
+            <p class="color" id="camisaAzul">Azul:</p>
+            <p class="color" id="rojo">Rojo:</p>
+            <p class="color">Verde:</p>
+            <p class="">Precio:</p>
+          </div>
+          <div class="campo">
+            <p class="cantidad" id="cantidadCamisaAzul"></p>
+            <p class="cantidad" id="cantidadCamisaRojo"></p>
+            <p class="cantidad" id="cantidadCamisaVerde"></p>
+            <p class="precio" id="precioCamisa"></p>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="pantalones">
+        <img src="/img/jeans.png" alt="" class="img">
+        <h3 class="card__tile">Pantalones</h3>
+        <p class="colores">Colores disponibles:</p>
+        <div class="box">
+          <div class="campo">
+            <p class="color">Azul:</p>
+            <p class="color">Rojo:</p>
+            <p class="color">Verde:</p>
+            <p class="">Precio:</p>
+          </div>
+          <div class="campo">
+            <p class="cantidad" id="cantidadPantalonesAzul"></p>
+            <p class="cantidad" id="cantidadPantalonesRojo"></p>
+            <p class="cantidad" id="cantidadPantalonesVerde"></p>
+            <p class="precio" id="precioPantalones"></p>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="gorras">
+        <img src="/img/cap.png" alt="" class="img">
+        <h3 class="card__tile">Gorras</h3>
+        <p class="colores">Colores disponibles:</p>
+        <div class="box">
+          <div class="campo">
+            <p class="color">Azul:</p>
+            <p class="color">Rojo:</p>
+            <p class="color">Verde:</p>
+            <p class="">Precio:</p>
+          </div>
+          <div class="campo">
+            <p class="cantidad" id="cantidadGorrasAzul"></p>
+            <p class="cantidad" id="cantidadGorrasRojo"></p>
+            <p class="cantidad" id="cantidadGorrasVerde"></p>
+            <p class="precio" id="precioGorras"></p>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="chaquetas">
+        <img src="/img/jacket.png" alt="" class="img">
+        <h3 class="card__tile">Chaquetas</h3>
+        <p class="colores">Colores disponibles:</p>
+        <div class="box">
+          <div class="campo">
+            <p class="color">Azul:</p>
+            <p class="color">Rojo:</qp>
+            <p class="color">Verde:</p>
+            <p class="">Precio:</p>
+          </div>
+          <div class="campo">
+            <p class="cantidad" id="cantidadChaquetasAzul"></p>
+            <p class="cantidad" id="cantidadChaquetasRojo"></p>
+            <p class="cantidad" id="cantidadChaquetasVerde"></p>
+            <p class="precio" id="precioChaquetas"></p>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="zapatos">
+        <img src="/img/sneakers.png" alt="" class="img">
+        <h3 class="card__tile">Zapatos</h3>
+        <p class="colores">Colores disponibles:</p>
+        <div class="box">
+          <div class="campo">
+            <p class="color">Negro:</p>
+            <p class="color">Rojo:</qp>
+            <p class="color">Blanco:</p>
+            <p class="">Precio:</p>
+          </div>
+          <div class="campo">
+            <p class="cantidad" id="cantidadZapatosNegro"></p>
+            <p class="cantidad" id="cantidadZapatosRojo"></p>
+            <p class="cantidad" id="cantidadZapatosBlanco"></p>
+            <p class="precio" id="precioZapatos"></p>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="bolsos">
+        <img src="/img/school-bag.png" alt="" class="img">
+        <h3 class="card__tile">Bolsos</h3>
+        <p class="colores">Colores disponibles:</p>
+        <div class="box">
+          <div class="campo">
+            <p class="color">Azul:</p>
+            <p class="color">Negro:</qp>
+            <p class="color">Verde:</p>
+            <p class="">Precio:</p>
+          </div>
+          <div class="campo">
+            <p class="cantidad" id="cantidadBolsoAzul"></p>
+            <p class="cantidad" id="cantidadBolsoNegro"></p>
+            <p class="cantidad" id="cantidadBolsoVerde"></p>
+            <p class="precio" id="precioBolsos"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+
+</html>
